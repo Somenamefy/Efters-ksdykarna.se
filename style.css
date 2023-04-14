@@ -82,13 +82,17 @@ footer a{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 12%;
+  margin-top: 8%;
+}
+.mainpage :first-child{
+  margin-bottom: 10px;
 }
 .pagecontent{
   display: flex;
   width: 90%;
   flex-direction: row;
   justify-content: space-between;
+  border: 2px solid black;
 }
 .pagecontent img{
   width: 100%;
@@ -100,13 +104,6 @@ footer a{
   justify-content: center;
   align-items: center;
 }
-/* .sectionimage{
-  height: 150px;
-  width: 150px;
-  border-radius: 150px;
-  border: none;
-  margin-bottom: 30px;
-} */
 .sectionimage img{
   height: 180px;
   width: 180px;
@@ -125,8 +122,15 @@ footer a{
 }
 .additionalinfo{
   border: 2px solid blue;
-  position:relative;
-  width: 90%;
+  position: relative;
+  width: 70%;
+  height: 150px;
+  border-radius: 20px;
+  padding: 20px;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  white-space: wrap;
 }
 .navbuttons{
   width: 50%;
@@ -134,7 +138,6 @@ footer a{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 .navbuttons button{
   border: none;
