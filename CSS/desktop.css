@@ -1,0 +1,198 @@
+:root{
+  --backgroundImage: url(../images/pexels-todd-trapani-2276928.jpg);
+  --glassBackground: rgba(255, 255, 255, 0.2);
+  --glassBorder: border: 1px solid rgba(255, 255, 255, 0.3);
+  --blur: blur(5px);
+  --borderRadius: 16px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: var(--backgroundImage);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Titillium Web', sans-serif;
+}
+footer {
+  position: absolute;
+  bottom:20px;
+  left: 50%;
+  align-items: center;
+  transform: translateX(-50%);
+  height: 2.5rem;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-img{
+  z-index: -1;
+  position: absolute;
+  height: auto;
+  width: 100vw;
+}
+footer a{
+  text-decoration:none;
+  color:black
+}
+.socialmediaicon{
+  height: 20px;
+  width: auto;
+}
+.socialmedia a{
+  margin: 5px;
+}
+.socialmedia{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden{
+  display: none;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar{
+  top: 0;
+  width: 95%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlogo{
+  margin-top: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+.navlogo img{
+  height: 100px;
+}
+.mainpage{
+  display: flex;
+  height: 80%;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8%;
+}
+.mainpage :first-child{
+  margin-bottom: 10px;
+}
+.pagecontent{
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pagecontent img{
+  width: 100%;
+  height: 50%;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionimage img{
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid black;
+  background: transparent;
+}
+.sectionimage img:hover{
+  scale: 1.1;
+}
+.sectiontext{
+  display: flex;
+  flex-wrap: wrap;
+}
+.additionalinfo{
+  border: 2px solid blue;
+  position: relative;
+  width: 70%;
+  height: 150px;
+  border-radius: 20px;
+  padding: 20px;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  white-space: wrap;
+}
+.navbuttons{
+  width: 40%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbuttons button{
+  border: var(--glassBorder);
+  background: var(--glassBackground);
+  border-radius: var(--borderRadius);
+  backdrop-filter: var(--blur);
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  color: white;
+}
+.navbuttons button:hover{
+  text-decoration: underline;
+}
+/* Här under är klasserna till startsidan */
+.pagevideo video{
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  object-fit: cover;
+}
+.centeredlogo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  width: 100vw;
+}
+.centeredlogo a img{
+  height: 30vh;
+  width: auto;
+}
+.ESDlogo{
+  height: 50%;
+  width: auto;
+  transition: all 0.4s ease-in-out;
+  filter: blur(0.5px);
+}
+.ESDlogo:hover{
+  scale: 1.2;
+}
+
+

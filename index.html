@@ -11,68 +11,67 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
   <link rel="manifest" href="./images/site.webmanifest">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media='screen and (max-width: 428px)' href="./CSS/phone.css"/>
+  <link rel="stylesheet" media='screen and (min-width: 429px) and (max-width: 1024px)' href="./CSS/tablet.css"/>
+  <link rel="stylesheet" media='screen and (min-width: 1025px)' href="./CSS/desktop.css">
   <title>Eftersöksdykarna</title>
 </head>
 <body>
 <img class="top-img" src="./images/blåvågor.svg" alt="">
-<div class="page">
-  <div class="navbar">
-    <div class="navlogo">
-      <img src="./images/ESDtrans.png" alt="Eftersöksdykarna logo">
-      <h2>Eftersöksdykarna</h2>
+  <div class="page">
+    <div class="navbar">
+      <div class="navlogo">
+        <img id="logga" src="./images/ESDtrans.png" alt="Eftersöksdykarna logo">
+        <p>Eftersöksdykarna</p>
+      </div>
     </div>
-    <div class="navbuttons">
-      <button>kontakt</button>
-      <button>Sponsorer</button>
-      <button>Om oss</button>
+    <section class="mainpage">
+      <div>
+        <h2>Våra specialområden</h2>
+      </div>
+      <div class="pagecontent">
+        <div class="section">
+          <div class="sectionimage">
+            <img id="drönare" src="./images/drönare.png" alt="">
+          </div>
+          <div class="sectiontext">
+            <p>Drönare</p>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sectionimage">
+            <img id="hund" src="./images//Hund.png" alt="">
+          </div>
+          <div class="sectiontext">
+            <p>Hund</p>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sectionimage">
+            <img id="båt" src="./images/motorbåt.png" alt="">
+          </div>
+          <div class="sectiontext">
+            <p>Båt</p>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sectionimage">
+            <img id="dyk" src="./images/dykare.png" alt="">
+          </div>
+          <div class="sectiontext">
+            <p>Dykare</p>
+          </div>
+        </div>
+      </div>
+      <div class="additionalinfo">
+        <h3 id="contentHeader">Vi är Eftersöksdykarna</h3>
+        <div class="contentElements">
+          <p id="contentText">Eftersöksdykarna är en idiell organisation som strävar efter spets kunskap inom sök i vattendrag, Vi strävar efter samarbete mellan myndigheter och privat personer för att kunna hjälpa hitta nära och kära som är försvunna.</p>
+            <a href="mailto:kontakt@eftersoksdykarna.se"><button>Kontakta oss</button></a>
+        </div>
+      </div>
     </div>
   </div>
-  <section class="mainpage">
-    <div>
-      <h2>Våra specialområden</h2>
-    </div>
-    <div class="pagecontent">
-      <div class="section">
-        <div class="sectionimage">
-          <img  src="./images/drönare.png" alt="">
-        </div>
-        <div class="sectiontext">
-          <h3>Eftersök med drönare</h3>
-        </div>
-      </div>
-      <div class="section">
-        <div class="sectionimage">
-          <img  src="./images//Hund.png" alt="">
-        </div>
-        <div class="sectiontext">
-          <h3>Eftersök med hund och hundförare</h3>
-        </div>
-      </div>
-      <div class="section">
-        <div class="sectionimage">
-          <img  src="./images/motorbåt.png" alt="">
-        </div>
-        <div class="sectiontext">
-          <h3>Båtsök alt. dyk från båt</h3>
-        </div>
-      </div>
-      <div class="section">
-        <div class="sectionimage">
-          <img  src="./images/dykare.png" alt="">
-        </div>
-        <div class="sectiontext">
-          <h3>Eftersök med dykare</h3>
-        </div>
-      </div>
-    </div>
-    <div class="additionalinfo">
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nisi.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus eligendi, ratione numquam assumenda adipisci est, quas accusantium iure facilis excepturi sed quis inventore culpa blanditiis in deleniti asperiores aliquam. Aliquam necessitatibus odit a, nihil omnis quia suscipit assumenda quasi expedita asperiores amet corporis repudiandae accusantium voluptatum fuga velit dolores illum.</p>
-
-    </div>
-  </div>
-</section>
 <footer>
   <div class="socialmedia">
     <a href="#"><img class="socialmediaicon" src="./images/Twitter-logo.svg.png" alt="Link to our Twitter-feed"></a>
@@ -81,5 +80,6 @@
   </div>
   <p>Created by <a href="https://www.emgus.se">Emgus Webdev</a> @2023</p>
 </footer>
+<script src="./script.js"></script>
 </body>
 </html>

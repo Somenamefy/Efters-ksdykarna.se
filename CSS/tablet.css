@@ -1,0 +1,204 @@
+:root{
+  --backgroundImage: url(../images/pexels-todd-trapani-2276928.jpg);
+  --glassBackground: rgba(255, 255, 255, 0.2);
+  --glassBorder: 1px solid rgba(255, 255, 255, 0.3);
+  --blur: blur(3px);
+  --borderRadius: 16px;
+  --glassBorder2px:2px solid rgba(255, 255, 255, 0.3);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: var(--backgroundImage);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Titillium Web', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:
+  env(safe-area-inset-top, 20px),
+  env(safe-area-inset-right, 1em),
+  env(safe-area-inset-bottom, 0.5vh),
+  env(safe-area-inset-left, 1.4rem);
+}
+footer {
+  position: sticky;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-size: 0.6rem;
+}
+footer a, footer p{
+  text-decoration:none;
+  color:white
+}
+.top-img{
+  z-index: -1;
+  position: absolute;
+  height: auto;
+  width: 100vw;
+}
+.socialmediaicon{
+  height: 20px;
+  width: auto;
+}
+.socialmedia a{
+  margin: 5px;
+}
+.socialmedia{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden{
+  display: none;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.navbar{
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-top: 2vh;
+  
+}
+.navlogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 20%;
+  position: absolute;
+  top: 2vh;
+}
+.navlogo img{
+  height: 10vh;
+}
+.mainpage{
+  display: flex;
+  height: 100%;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pagecontent{
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.sectionimage img{
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  border: var(--glassBorder2px);
+  background-color: var(--glassBackground);
+  backdrop-filter: var(--blur);
+
+}
+.sectionimage img:active{
+  scale: 1.1;
+}
+.sectiontext{
+  display: flex;
+  flex-wrap: wrap;
+}
+.additionalinfo{
+  border: var(--glassBorder);
+  background-color: var(--glassBackground);
+  position: relative;
+  height: 30vh;
+  width: 90%;
+  border-radius: 16px;
+  padding: 10px;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  white-space: wrap;
+  text-align: center;
+  backdrop-filter: var(--blur);
+}
+.additionalinfo button{
+  background-color: var(--glassBackground);
+  border: var(--glassBorder);
+  border-radius: var(--borderRadius);
+  padding: 10px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.contentElements{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+.contentElements a{
+  text-decoration: none;
+  color: black;
+}
+/* Här under är klasserna till startsidan */
+.pagevideo video{
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  object-fit: cover;
+}
+.centeredlogo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  width: 100vw;
+}
+.centeredlogo a img{
+  height: 30vh;
+  width: auto;
+}
+.ESDlogo{
+  height: 50%;
+  width: auto;
+  transition: all 0.4s ease-in-out;
+  filter: blur(0.5px);
+}
+.ESDlogo:hover{
+  scale: 1.2;
+}
+@media screen and (max-height:428px) {
+  
+}
+
+
