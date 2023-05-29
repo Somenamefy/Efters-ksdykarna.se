@@ -6,47 +6,55 @@
   --borderRadius: 16px;
   --glassBorder2px:2px solid rgba(255, 255, 255, 0.3);
 }
-*{
+body{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
-body{
   background-image: var(--backgroundImage);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #dddce1;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size:  100% 100%;
+  background-size:  100% 100%;
   background-attachment: fixed;
   font-family: 'Titillium Web', sans-serif;
+  min-height: calc(-webkit-fill-available + env(safe-area-inset-top));
   width: 100vw;
-  height: 100vh;
+  min-height: -webkit-fill-available;
+  width: 100%;       
+  width: -webkit-fill-available;           
+  min-height: -webkit-fill-available;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); /* Mozilla-based browsers will ignore this. */
   display: flex;
   flex-direction: column;
-  padding:
-  env(safe-area-inset-top, 20px),
-  env(safe-area-inset-right, 1em),
-  env(safe-area-inset-bottom, 0.5vh),
-  env(safe-area-inset-left, 1.4rem);
+  overflow: hidden;
 }
 footer {
-  position: sticky;
+  position: absolute;
+  bottom:20px;
+  left: 50%;
+  align-items: center;
+  transform: translateX(-50%);
+  height: fit-content;
   background: transparent;
+  line-height: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: auto;
-  font-size: 0.6rem;
+  font-size: 2vmin;
 }
 footer a, footer p{
   text-decoration:none;
   color:white
 }
 .top-img{
-  z-index: -1;
-  position: absolute;
+  /* position: absolute;
+  top:0;
   height: auto;
-  width: 100vw;
+  width: 100%; */
+  display: none;
 }
 .socialmediaicon{
   height: 20px;
@@ -59,6 +67,10 @@ footer a, footer p{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--glassBackground);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border-radius: 5px;
 }
 .hidden{
   display: none;
@@ -87,15 +99,18 @@ footer a, footer p{
   font-size: 1rem;
   width: 50%;
 }
+.navlogo p{
+  margin: 0;
+}
 .navlogo img{
   height: 10vh;
 }
 .mainpage{
   display: flex;
-  height: 70%;
+  height: 70vh;
   width: 90%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 .pagecontent{
@@ -118,6 +133,7 @@ footer a, footer p{
   border: var(--glassBorder2px);
   background-color: var(--glassBackground);
   backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
 }
 .sectionimage img:active{
   scale: 1.1;
@@ -125,12 +141,13 @@ footer a, footer p{
 .sectiontext{
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 .additionalinfo{
-  border: var(--glassBorder);
+  border: var(--glassBorder2px);
   background-color: var(--glassBackground);
-  position: relative;
-  height: 40vh;
+  height: 30vh;
   width: 90%;
   border-radius: 16px;
   padding: 10px;
@@ -140,20 +157,30 @@ footer a, footer p{
   white-space: wrap;
   text-align: center;
   backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur)
+}
+h3, h2{
+  margin: 0;
 }
 .additionalinfo button{
-  background-color: var(--glassBackground);
+  background-color: rgba(255, 255, 255, 0.4);
   border: var(--glassBorder);
   border-radius: var(--borderRadius);
   padding: 10px;
-  width: 100%;
-  font-size: 1.1rem;
+  max-width: 200px;
+  font-size: 1rem;
 }
 .contentElements{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 90%;
+}
+.contentElements>div{
+  font-size: 1.8vh;
+  height: 40%;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
 }
 .contentElements a{
   text-decoration: none;
@@ -191,6 +218,54 @@ footer a, footer p{
 }
 .ESDlogo:hover{
   scale: 1.2;
+}
+.Specialareas{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (orientation: landscape) and (max-height: 768px) {
+  .contentElements>div{
+    font-size: 1.5dvw;
+  }
+  .navbar{
+    width: fit-content;
+    height: 80dvh
+  }
+  .navlogo img{
+    height: 20dvw;
+  }
+  .mainpage{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    height: 100%;
+  }
+  .Specialareas{
+    width: 40%;
+  }
+  .section{
+    width: 50px;
+  }
+  .pagecontent{
+    display: grid;
+    width: 40%;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 20%;
+  }
+  .additionalinfo{
+    width: 30%;
+    height: 80%;
+    border: none;
+  }
+  .navlogo p{
+    display: none;
+  }
 }
 
 

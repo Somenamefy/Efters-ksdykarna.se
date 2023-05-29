@@ -20,11 +20,11 @@ document.querySelector('#dyk').addEventListener('click', () => {
   let contentHeader = document.querySelector('#contentHeader');
   let contentText = document.querySelector('#contentText');
   contentHeader.innerText = "Eftersök med dykare";
-  contentText.innerText = "Vi har proffsiga dykare, med mycket erfarenhet, som kan agera sök-element under ytan, samt analysera strömmar. Att använda dykare vid insatser är en grundförutsättning för en lyckad insats då objektet misstänks befinna sig under ytan.";
+  contentText.innerText = "Vi har proffsiga dykare, med mycket erfarenhet. Att använda dykare vid insatser är en grundförutsättning för en lyckad insats då objektet misstänks befinna sig under ytan.";
 });
 document.querySelector('#logga').addEventListener('click', () => {
   let contentHeader = document.querySelector('#contentHeader');
   let contentText = document.querySelector('#contentText');
   contentHeader.innerText = "Vi är Eftersöksdykarna";
-  contentText.innerText = "Eftersöksdykarna är en idiell organisation som strävar efter spets kunskap inom sök i vattendrag, Vi strävar efter samarbete mellan myndigheter och privat personer för att kunna hjälpa hitta nära och kära som är försvunna.";
+  contentText.innerText = "Eftersöksdykarna är en idell organisation som strävar efter spetskunskap inom sök i vattendrag, Vi strävar efter samarbete mellan myndigheter och privatpersoner för att kunna hjälpa till att hitta nära och kära som är försvunna.";
 });

@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#cfcfcf" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Eftersöksdykarna">
+  <meta name="apple-mobile-web-app-title" content="Eftersöksdykarna">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
   <link rel="manifest" href="./images/site.webmanifest">
-  <link rel="stylesheet" media='screen and (max-width: 428px)' href="./CSS/phone.css"/>
-  <link rel="stylesheet" media='screen and (min-width: 429px) and (max-width: 1024px)' href="./CSS/tablet.css"/>
+  <link rel="stylesheet" media='screen and (max-width: 1024px)' href="./CSS/phone.css"/>
   <link rel="stylesheet" media='screen and (min-width: 1025px)' href="./CSS/desktop.css">
   <title>Eftersöksdykarna</title>
 </head>
@@ -24,50 +27,55 @@
         <img id="logga" src="./images/ESDtrans.png" alt="Eftersöksdykarna logo">
         <p>Eftersöksdykarna</p>
       </div>
+      <span></span>
     </div>
     <section class="mainpage">
-      <div>
-        <h2>Våra specialområden</h2>
-      </div>
-      <div class="pagecontent">
-        <div class="section">
-          <div class="sectionimage">
-            <img id="drönare" src="./images/drönare.png" alt="">
-          </div>
-          <div class="sectiontext">
-            <p>Drönare</p>
-          </div>
+      <div class="Specialareas">
+        <div>
+          <h2>Våra specialområden</h2>
         </div>
-        <div class="section">
-          <div class="sectionimage">
-            <img id="hund" src="./images//Hund.png" alt="">
+        <div class="pagecontent">
+          <div class="section">
+            <div class="sectionimage">
+              <img id="drönare" src="./images/drönare.png" alt="">
+            </div>
+            <div class="sectiontext">
+              <p>Drönare</p>
+            </div>
           </div>
-          <div class="sectiontext">
-            <p>Hund</p>
+          <div class="section">
+            <div class="sectionimage">
+              <img id="hund" src="./images//Hund.png" alt="">
+            </div>
+            <div class="sectiontext">
+              <p>Hund</p>
+            </div>
           </div>
-        </div>
-        <div class="section">
-          <div class="sectionimage">
-            <img id="båt" src="./images/motorbåt.png" alt="">
+          <div class="section">
+            <div class="sectionimage">
+              <img id="båt" src="./images/motorbåt.png" alt="">
+            </div>
+            <div class="sectiontext">
+              <p>Båt</p>
+            </div>
           </div>
-          <div class="sectiontext">
-            <p>Båt</p>
-          </div>
-        </div>
-        <div class="section">
-          <div class="sectionimage">
-            <img id="dyk" src="./images/dykare.png" alt="">
-          </div>
-          <div class="sectiontext">
-            <p>Dykare</p>
+          <div class="section">
+            <div class="sectionimage">
+              <img id="dyk" src="./images/dykare.png" alt="">
+            </div>
+            <div class="sectiontext">
+              <p>Dykare</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="additionalinfo">
         <h3 id="contentHeader">Vi är Eftersöksdykarna</h3>
         <div class="contentElements">
-          <p id="contentText">Eftersöksdykarna är en idiell organisation som strävar efter spets kunskap inom sök i vattendrag, Vi strävar efter samarbete mellan myndigheter och privat personer för att kunna hjälpa hitta nära och kära som är försvunna.</p>
-            <a href="mailto:kontakt@eftersoksdykarna.se"><button>Kontakta oss</button></a>
+          <div>
+            <p id="contentText">Eftersöksdykarna är en idell organisation som strävar efter spetskunskap inom sök i vattendrag, Vi strävar efter samarbete mellan myndigheter och privatpersoner för att kunna hjälpa till att hitta nära och kära som är försvunna.</p>
+          </div>
+          <a href="mailto:kontakt@eftersoksdykarna.se"><button>Kontakta oss</button></a>
         </div>
       </div>
     </div>
@@ -79,6 +87,7 @@
     <a href="#"><img class="socialmediaicon" src="./images/124010.png" alt="Link to our Facebook-page"></a>
   </div>
   <p>Created by <a href="https://www.emgus.se">Emgus Webdev</a> @2023</p>
+  <a href="mailto:admin@eftersoksdykarna.se">Report issue</a>
 </footer>
 <script src="./script.js"></script>
 </body>

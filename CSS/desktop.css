@@ -2,8 +2,11 @@
   --backgroundImage: url(../images/pexels-todd-trapani-2276928.jpg);
   --glassBackground: rgba(255, 255, 255, 0.2);
   --glassBorder: border: 1px solid rgba(255, 255, 255, 0.3);
-  --blur: blur(5px);
+  --blur: blur(3px);
   --borderRadius: 16px;
+  --glassBorder2px:2px solid rgba(255, 255, 255, 0.3);
+  --categoryimage: 120px;
+  --logoSize: 150px;
 }
 
 *{
@@ -13,11 +16,12 @@
 }
 body{
   background-image: var(--backgroundImage);
-  background-position: center;
+  background-position: 50% 60%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Titillium Web', sans-serif;
+  overflow: hidden;
 }
 footer {
   position: absolute;
@@ -31,16 +35,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color:rgb(199, 199, 199)
 }
 .top-img{
-  z-index: -1;
+  /* z-index: -1;
   position: absolute;
   height: auto;
-  width: 100vw;
+  width: 100vw; */
+  display: none;
 }
 footer a{
   text-decoration:none;
-  color:black
+  color:rgb(199, 199, 199)
 }
 .socialmediaicon{
   height: 20px;
@@ -71,17 +77,17 @@ footer a{
   align-items: center;
 }
 .navlogo{
-  margin-top: 5%;
+  margin-top: 6%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 150px;
+  height: var(--logoSize);
+  width: var(--logoSize);
 }
 .navlogo img{
-  height: 100px;
+  height:var(--logoSize);
 }
 .mainpage{
   display: flex;
@@ -90,10 +96,15 @@ footer a{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 3%;
 }
-.mainpage :first-child{
-  margin-bottom: 10px;
+.Specialareas{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
 }
 .pagecontent{
   display: flex;
@@ -112,32 +123,48 @@ footer a{
   align-items: center;
 }
 .sectionimage img{
-  height: 180px;
-  width: 180px;
-  border-radius: 90px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  height: var(--categoryimage);
+  width: var(--categoryimage);
+  border-radius: 50%;
+  border: var(--glassBorder2px);
   transition: all 0.2s ease-in-out;
-  border: 2px solid black;
-  background: transparent;
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  background-color: var(--glassBackground);
 }
 .sectionimage img:hover{
   scale: 1.1;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .sectiontext{
   display: flex;
   flex-wrap: wrap;
 }
 .additionalinfo{
-  border: 2px solid blue;
+  border: var(--glassBorder2px);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 70%;
-  height: 150px;
+  height: 30vh;
   border-radius: 20px;
   padding: 20px;
   text-overflow: ellipsis;
   overflow-wrap: break-word;
   overflow: hidden;
   white-space: wrap;
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  background-color: var(--glassBackground);
+}
+.additionalinfo button{
+  background-color: rgba(255, 255, 255, 0.4);
+  border: var(--glassBorder);
+  border-radius: var(--borderRadius);
+  padding: 10px;
+  max-width: 200px;
+  font-size: 1rem;
 }
 .navbuttons{
   width: 40%;
@@ -160,6 +187,23 @@ footer a{
 }
 .navbuttons button:hover{
   text-decoration: underline;
+}
+.contentElements{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+}
+.contentElements>div{
+  font-size: 1.8vh;
+  height: 40%;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+}
+.contentElements a{
+  text-decoration: none;
+  color: black;
 }
 /* Här under är klasserna till startsidan */
 .pagevideo video{
