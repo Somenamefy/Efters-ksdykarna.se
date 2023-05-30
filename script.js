@@ -2,29 +2,29 @@ document.querySelector('#hund').addEventListener('click', () => {
   let contentHeader = document.querySelector('#contentHeader');
   let contentText = document.querySelector('#contentText');
   contentHeader.innerText = "Eftersök med hund";
-  contentText.innerText = "Vi har hundförare vars hundar tränats för eftersök på människor. Dessa hundar är väldigt effektiva vid de tillfällen då objektet skulle vara avlidet.";
+  contentText.innerText = "I sökandet efter försvunna personer är hundens nos en ovärderlig resurs både på vatten och land. I Eftersöksdykarna har vi tillgång till ett antal duktiga och erfarna hundekipage som är tränade för sin uppgift.";
 });
 document.querySelector('#drönare').addEventListener('click', () => {
   let contentHeader = document.querySelector('#contentHeader');
   let contentText = document.querySelector('#contentText');
   contentHeader.innerText = "Eftersök med drönare";
-  contentText.innerText = "Vi har tillgång till luft- och Undervattens-drönare. Detta skapar bra förutsättningar för en lyckad insats då vi kan genomsöka området både från luft och under ytan.";
+  contentText.innerText = "Vi har tillgång till luft- och undervattensdrönare. Detta skapar förutsättningar för en lyckad insats då vi kan genomsöka området både från luften och under ytan.";
 });
 document.querySelector('#båt').addEventListener('click', () => {
   let contentHeader = document.querySelector('#contentHeader');
   let contentText = document.querySelector('#contentText');
   contentHeader.innerText = "Eftersök med båt";
-  contentText.innerText = "Vi har tillgång till båtar som kan användas vid insatser när objektet inte skulle kunna hittas från land. Vi kan även scanna botten för att kunna hitta sökområden innan vi tillsätter mer resurser.";
+  contentText.innerText = "Vi har tillgång till båtar som används vid insatser där objektet inte kan hittas från land. Med dem kan vi även skanna botten för att lättare lokalisera objektet innan vi tillsätter mer resurser.";
 });
 document.querySelector('#dyk').addEventListener('click', () => {
   let contentHeader = document.querySelector('#contentHeader');
   let contentText = document.querySelector('#contentText');
   contentHeader.innerText = "Eftersök med dykare";
-  contentText.innerText = "Vi har proffsiga dykare, med mycket erfarenhet. Att använda dykare vid insatser är en grundförutsättning för en lyckad insats då objektet misstänks befinna sig under ytan.";
+  contentText.innerText = "Våra dykare besitter den erfarenheten som krävs vid eftersöksdyk. Att kunna använda dykare vid insatser är en grundförutsättning för en lyckad insats där objektet misstänks befinna sig under vattenytan.";
 });
 document.querySelector('#logga').addEventListener('click', () => {
   let contentHeader = document.querySelector('#contentHeader');
   let contentText = document.querySelector('#contentText');
   contentHeader.innerText = "Vi är Eftersöksdykarna";
-  contentText.innerText = "Eftersöksdykarna är en idell organisation som strävar efter spetskunskap inom sök i vattendrag, Vi strävar efter samarbete mellan myndigheter och privatpersoner för att kunna hjälpa till att hitta nära och kära som är försvunna.";
+  contentText.innerText = "Eftersöksdykarna är en ideell organisation som innehar spetskunskap om sök i vattendrag. Vi verkar med insatser där polisens och räddningstjänstens resurser inte räcker till. Det vill säga då det inte rör sig om misstanke om brott eller där det inte handlar om räddningsinsatser. Vi finns för att familjer och närstående inte ska behöva leva i ovisshet utan komma till ett möjligt avslut.";
 });

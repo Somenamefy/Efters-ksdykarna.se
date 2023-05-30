@@ -106,6 +106,9 @@ footer a{
   align-items: center;
   margin-bottom: 5%;
 }
+.Specialareas h2{
+  margin-bottom: 10%;
+}
 .pagecontent{
   display: flex;
   width: 90%;
@@ -166,6 +169,9 @@ footer a{
   max-width: 200px;
   font-size: 1rem;
 }
+.additionalinfo>h3{
+  font-size: 1.9vh;   
+}
 .navbuttons{
   width: 40%;
   height: 70%;
@@ -196,10 +202,11 @@ footer a{
   height: 90%;
 }
 .contentElements>div{
-  font-size: 1.8vh;
+  font-size: 1.6vh;
   height: 40%;
   text-overflow: ellipsis;
   overflow-wrap: break-word;
+  text-align: center;
 }
 .contentElements a{
   text-decoration: none;
